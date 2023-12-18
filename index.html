@@ -9,8 +9,11 @@
     <title>Registration form</title>
 </head>
 <body background="https://static.vecteezy.com/system/resources/thumbnails/008/058/793/small/abstract-blur-with-bokeh-light-for-background-usage-vector.jpg" >
-    <h1 >Registration Form</h1>
-    <form action="xyz.php" method="get">  
+    
+  
+    <form action="xyz.php" method="get" target="_parent">  
+      <fieldset> <legend><h1>Registration Form</h1></legend>
+       
     <div>
         <label> Firstname </label>         
         <input type="text" name="firstname" size="15"/> <br> <br>  
@@ -73,9 +76,10 @@
         <input type="Password" id="repass" name="repass"> <br> <br>
     </div> 
     <div>   
-        <input type="button" value="Submit" aria-controls="Submit"/> 
+        <input type="submit"/> 
         <input type="button" value="Reset"/> 
     </div>  
+</fieldset> 
         </form>    
 </body>
 </html>
