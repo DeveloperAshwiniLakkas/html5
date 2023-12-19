@@ -5,10 +5,11 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>portfolio</title>
   <style>
+  
     header{
       grid-template-columns: 10cm;
       background-color: rgb(209, 227, 189);
-      position: sticky;
+      position:-ms-page;
       width: 100%;
      display: flex;
      flex-direction: row;
@@ -47,6 +48,7 @@ button:focus {
 
 button:hover {
   box-shadow: rgba(45, 35, 66, 0.4) 0 4px 8px, rgba(45, 35, 66, 0.3) 0 7px 13px -3px, #D6D6E7 0 -3px 0 inset;
+  
   transform: translateY(-2px);
 }
 
@@ -146,24 +148,35 @@ body{
       text-align: right;
 
     }
+    .footer{
+      border-radius: 30px;
+      font-style: italic;
+      color: #f4f4fa;
+      background-color: rgb(223, 133, 133);
+    }
+    footer a{
+      color: brown;
+    }
 
   </style>
 </head>
 <body>
+<div class="m1">
   <header>
     <nav>
     
     <img src="logo-color.png" alt="logo-color" height="100px" width="150px">
     <h1 >Portfolio</h1>
     <ul>
-    <button><li class="b1"><a href="#home"> home </a></li></button>
-    <button><li class="b2"><a href="#project"> projects </a></li></button>
-    <button><li class="b3"><a href="#Contact us"> Contact us  </a></li></button>
-    <button><li class="b4"><a href="#Aboutus"> About us  </a></li></button>
+    <button class="b1"><a href="#home"> home </a></button>
+    <button class="b2"><a href="#project"> projects </a></button>
+    <button class="b3"><a href="#Contact_us"> Contact us </a></button>
+    <button class="b4"><a href="Resume.html"> About us  </a></button>
     </ul>
 </nav>
 </header>
-  <main>
+<section id="home">
+   <main>
     <h1 >Ashwini Lakkas</h1>
     <h3>Hey , I am Java Full Stack Devloper  </h3>
 <div class="container">
@@ -198,15 +211,26 @@ Throughout my career, I’ve had the opportunity to work on various projects,
 ranging from small startups to large-scale enterprise applications. 
 I thrive in dynamic environments where I can tackle challenges, collaborate with cross-functional teams, 
 and deliver high-quality solutions that meet both user requirements and business objectives.
-I’m excited to be part of a team where I can contribute my full stack java development skills and help create innovative and impactful applications.
-
+I’m excited to be part of a team where I can contribute my full stack java development skills and help create innovative and impactful 
+applications.
 </p>
-<div class="back-to-top-wrapper">
-  <a href="#top" class="back-to-top-link" aria-label="Scroll to Top">🔝</a>
 </div>
 
-</div>
+
+
+
 
   </main>
+</section>
+<section id="Contact_us"></section>
+    <div class="footer">
+      <footer > <div class="back-to-top-wrapper">
+        <a text-align="center" href="#top" class="back-to-top-link" aria-label="Scroll to Top">🔝</a>
+        <p>2023-2024</p>
+        @copyright <a href="grid_flex.html">Ashwini</a>
+      </div>
+    </footer>
+    </div>
+</div>
 </body>
 </html>
